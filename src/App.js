@@ -15,11 +15,11 @@ class App extends React.Component {
     error: undefined
     // icon: undefined
   };
-/*
+
   convertToCelsius = (temperature) => {
     let cel = Math.floor(temperature - 273.15);
     return cel
-  };*/
+  };
 
 
   getWeather = async e => {
@@ -38,8 +38,7 @@ class App extends React.Component {
       
     
       this.setState({
-temperature: data.main.temp
-       //temperature: this.convertToCelsius(data.main.temp),
+       temperature: this.convertToCelsius(data.main.temp),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
