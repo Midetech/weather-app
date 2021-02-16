@@ -7,7 +7,7 @@ class Title extends  React.Component{
     <h1 className="title-container__title">
         Weather App
         </h1>
-        <h3 className="title-container__subtitle">Find out weather condition and more.</h3>
+        <h3 className="title-container__subtitle">Find out weather condition <br/> and more.</h3>
     
 </div>
         );
